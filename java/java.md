@@ -158,7 +158,10 @@ Object类toString方法返回的这一串东西java.lang.Object@15db9742是一�
 ## <span id="java_9">9. Integer 和 int 之间的区别？</span>
 Integer是类，int是基本数据类型。
 ## <span id="java_10">10. String 转换成 Integer 的方式及原理？</span>
+使用的parseInt进行转换的，内部根据ASCII进行逐字对比。
 ## <span id="java_11">11. 自动装箱实现原理？类型转换实现原理？</span>
+自动装箱就是Java自动将原始类型值转换成对应的对象，比如将int的变量转换成Integer对象，这个过程叫做装箱，反之将Integer对象转换成int类型值，这个过程叫做拆箱。
+
 ## <span id="java_12">12. 对 String 的了解？</span>
 ## <span id="java_13">13. String 为什么要设计成不可变的？</span>
 ## <span id="java_14">14. final、finally 和 finalize 的区别？</span>
