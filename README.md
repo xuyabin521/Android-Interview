@@ -12,28 +12,28 @@
 
 ### 基础
 
-- [什么是面向对象（OOP）？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_1)
-- [什么是多态？实现多态的机制是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_2)
-- [接口（Interface）与抽象类（Abstract Class）的区别？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_3)
-- [重写（Override）与重载（Overload）的区别?](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_4)
+- [什么是面向对象（OOP）？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_1)
+- [什么是多态？实现多态的机制是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_2)
+- [接口（Interface）与抽象类（Abstract Class）的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_3)
+- [重写（Override）与重载（Overload）的区别?](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_4)
 - 父类的静态方法能否被子类重写？
 - 静态属性和静态方法是否可以被继承？是否可以被重写？为什么？
 - 什么是内部类？内部类、静态内部类、局部内部类和匿名内部类的区别及作用？
-- [== 和 equals() 和 hashCode() 的区别？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_8)
+- [== 和 equals() 和 hashCode() 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_8)
 - Integer 和 int 之间的区别？
 - String 转换成 Integer 的方式及原理？
 - 自动装箱实现原理？类型转换实现原理？
 - 对 String 的了解？
 - String 为什么要设计成不可变的？
-- [final、finally 和 finalize 的区别？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_14)
-- [static 关键字有什么作用？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_15)
+- [final、finally 和 finalize 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_14)
+- [static 关键字有什么作用？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_15)
 - 列举 Java 的集合以及集合之间的继承关系?
 - List、Set、Map 的区别？
-- [ArrayList、LinkedList 的区别？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_18)
+- [ArrayList、LinkedList 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_18)
 - HashMap，HashTable，ConcurrentHashMap 实现原理以及区别？
 - HashSet 与 HashMap 怎么判断集合元素重复？
 - String、StringBuffer、StringBuilder 之间的区别？
-- [什么是序列化？怎么实现？有哪些方式？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_22)
+- [什么是序列化？怎么实现？有哪些方式？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_22)
 - 对反射的了解？
 - 对注解的了解？
 - 对依赖注入的了解？
@@ -65,16 +65,16 @@
 
 ###  JVM
 
-- [简述 JVM 内存模型和内存区域？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#jvm_1)
+- [简述 JVM 内存模型和内存区域？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#jvm_1)
 - 简述垃圾回收器的工作原理？
 - 如何判断对象的生死？垃圾回收算法？新生代，老生代？
 - 哪些情况下的对象会被垃圾回收机制处理掉？
 - 垃圾回收机制与调用 System.gc() 的区别？
-- [强引用、软引用、弱引用、虚引用之间的区别？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_53)
+- [强引用、软引用、弱引用、虚引用之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_53)
 - 强引用设置为 null，会不会被回收？
 - 简述 ClassLoader 类加载机制？
 - 对双亲委派模型的了解？
-- [String a = "a"+"b"+"c" 在内存中创建几个对象？](https://github.com/jeanboydev/Android-Interview/blob/master/java/java.md#java_57)
+- [String a = "a"+"b"+"c" 在内存中创建几个对象？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_57)
 - 对 Dalvik、ART 虚拟机的了解？
 - 对动态加载（OSGI）的了解？
 - 常见编码方式有哪些？
@@ -97,16 +97,16 @@
 - Activity 的四种 LaunchMode（启动模式）的区别？
 - Activity 状态保存与恢复？
 - Fragment 各种情况下的生命周期？
--  [Activity 和 Fragment 之间怎么通信， Fragment 和 Fragment 怎么通信？](https://github.com/jeanboydev/Android-Interview/blob/master/android/android.md#android_base_14)
+-  [Activity 和 Fragment 之间怎么通信， Fragment 和 Fragment 怎么通信？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_14)
 - Service 的生命周期？
 - Service 的启动方式？
 - Service 与 IntentService 的区别?
-- [Service 和 Activity 之间的通信方式？](https://github.com/jeanboydev/Android-Interview/blob/master/android/android.md#android_base_18)
+- [Service 和 Activity 之间的通信方式？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_18)
 - 对 ContentProvider 的理解？
 - ContentProvider、ContentResolver、ContentObserver 之间的关系？
 - 对 BroadcastReceiver 的了解？
 - 广播的分类？使用方式和场景？
-- [动态广播和静态广播有什么区别？](https://github.com/jeanboydev/Android-Interview/blob/master/android/android.md#android_base_23)
+- [动态广播和静态广播有什么区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_23)
 - AlertDialog、popupWindow、Activity 之间的区别？
 - Application 和 Activity 的 Context 之间的区别？
 - Android 属性动画特性？
@@ -129,7 +129,7 @@
 
 ### 高级
 
-- [画出 Android 的大体架构图](https://github.com/jeanboydev/Android-Interview/blob/master/android/android.md#android_advance_1)
+- [画出 Android 的大体架构图](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_1)
 - 低版本 SDK 如何使用高版本 API？
 - AsyncTask 如何使用?
 - AsyncTask 机制、原理及不足？
@@ -241,7 +241,7 @@
 
 ## 网络技术
 
-- [描述一次网络请求的流程?](https://github.com/jeanboydev/Android-Interview/blob/master/network/network.md#quest_network_technological_process)
+- [描述一次网络请求的流程?](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process)
 - TCP 中 3 次握手和 4 次挥手的过程?
 - TCP 与 UDP 的区别及应用?
 - HTTP 协议
@@ -313,88 +313,88 @@
 
 ## 人事相关
 
-- [请简单做个自我介绍？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_1)
-- [为什么离开上家公司？您在前一家公司的离职原因是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_2)
-- [为什么要做 xxx 岗位（出现所学专业与求职岗位不同时提问）?](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_3)
-- [讲一个你认为做的最好的项目/案例](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_4)
-- [你应聘该岗位的优势是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_5)
-- [你上家公司的薪水/期望的薪金？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_6)
-- [你对薪资的要求？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_7)
-- [谈谈你对跳槽的看法？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_8)
-- [对待加班看法？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_9)
-- [自己最擅长的技术点，最感兴趣的技术领域和技术点，做了那些东西？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_10)
-- [自己的优点和缺点是什么？并举例说明？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_11)
-- [你朋友对你的评价？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_12)
-- [说下项目中遇到的棘手问题，包括技术，交际和沟通？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_13)
+- [请简单做个自我介绍？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_1)
+- [为什么离开上家公司？您在前一家公司的离职原因是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_2)
+- [为什么要做 xxx 岗位（出现所学专业与求职岗位不同时提问）?](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_3)
+- [讲一个你认为做的最好的项目/案例](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_4)
+- [你应聘该岗位的优势是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_5)
+- [你上家公司的薪水/期望的薪金？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_6)
+- [你对薪资的要求？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_7)
+- [谈谈你对跳槽的看法？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_8)
+- [对待加班看法？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_9)
+- [自己最擅长的技术点，最感兴趣的技术领域和技术点，做了那些东西？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_10)
+- [自己的优点和缺点是什么？并举例说明？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_11)
+- [你朋友对你的评价？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_12)
+- [说下项目中遇到的棘手问题，包括技术，交际和沟通？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_13)
   项目中遇到最大的困难是什么？如何解决的？
-- [在五年的时间内，你的职业规划？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_14)
-- [给你一个项目，你怎么看待他的市场和技术的关系？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_15)
-- [你一般喜欢从什么渠道获取技术信息和提高自己的能力？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_16)
+- [在五年的时间内，你的职业规划？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_14)
+- [给你一个项目，你怎么看待他的市场和技术的关系？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_15)
+- [你一般喜欢从什么渠道获取技术信息和提高自己的能力？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_16)
   你的学习方法是什么样的？实习过程中如何学习？实习项目中遇到的最大困难是什么以及如何解决的？
-- [如果实际工作后发现自己不适合这个职位怎么办？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_17)
+- [如果实际工作后发现自己不适合这个职位怎么办？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_17)
   如果通过这次面试我们单位录用了你，但工作一段时间却发现你根本不适合这个职位，你怎么办？
-- [工作上与领导意见不同时，怎么办？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_18)
-- [如果你的主管抢了你的功劳你该怎样？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_19)
-- [若上司在公开会议上误会你了，该如何解决？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_20)
-- [工作中你难以和同事、上司相处，你该怎么办？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_21)
-- [因成绩比较突出，受同事们孤立你怎么看？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_22)
-- [你和别人发生过争执吗？你是怎样解决的？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_23)
-- [如果工作失误，给公司造成经济损失，你该怎么办？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_24)
-- [你对于我们公司了解多少？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_25)
-- [你为什么愿意到我们公司来工作？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_26)
-- [你能为我们公司带来什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_27)
-- [你最擅长的技术点，最感兴趣的技术领域和技术点？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_28)
-- [说说你对行业、技术发展趋势的看法？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_29)
-- [理想中的工作环境是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_30)
-- [说说你的家庭？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_31)
-- [就你申请的这个职位，你认为你还欠缺什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_32)
-- [你做过的哪件事最令自己感到骄傲？说一件最能证明你能力的事情？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_33)
-- [对这项工作，你有哪些可预见的困难？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_34)
-- [如果被录用，你将怎样开展工作？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_35)
-- [希望与什么样的上级共事？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_36)
-- [你工作经验欠缺，如何能胜任这项工作？ ](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_37)
-- [如果你在这次面试中没有被录用，你怎么打算？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_38)
-- [除了本公司外，还应聘了哪些公司？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_39)
-- [你还要什么了解和要问的吗？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_40)
-- [实习过程中周围同事/同学有哪些值得学习的地方？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_41)
-- [是否可以实习，可以实习多久？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_42)
-- [实习过程中做了什么，有什么产出？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_43)
-- [公司实习最大的收获是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_44)
-- [评价下自己，评价下自己的技术水平，个人代码量如何？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_45)
-- [当前的 offer 状况；如果 BATH 都给了offer 该如何选？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_46)
-- [你对一份工作更看重哪些方面？平台，技术，氛围，城市，还是 money？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_47)
-- [假如你晚上要去送一个出国的同学去机场，可单位临时有事非你办不可，你怎么办？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_48)
-- [你看中公司的什么？或者公司的那些方面最吸引你？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_49)
-- [讲一件你印象最深的一件事情？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_50)
-- [介绍你做过的哪些项目，介绍一个你影响最深的项目？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_51)
-- [你做过的哪件事最令自己感到骄傲？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_52)
-- [都使用过哪些框架、平台？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_53)
-- [都使用过哪些自定义控件？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_54)
-- [项目中用了哪些开源库，如何避免因为引入开源库而导致的安全性和稳定性问题？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_55)
-- [有没有什么开源项目？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_56)
-- [研究比较深入的领域有哪些？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_57)
-- [对业内信息的关注渠道有哪些？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_58)
-- [业余都有哪些爱好？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_59)
-- [最近都读哪些书？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_60)
-- [你的梦想是什么？](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_61)
+- [工作上与领导意见不同时，怎么办？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_18)
+- [如果你的主管抢了你的功劳你该怎样？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_19)
+- [若上司在公开会议上误会你了，该如何解决？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_20)
+- [工作中你难以和同事、上司相处，你该怎么办？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_21)
+- [因成绩比较突出，受同事们孤立你怎么看？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_22)
+- [你和别人发生过争执吗？你是怎样解决的？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_23)
+- [如果工作失误，给公司造成经济损失，你该怎么办？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_24)
+- [你对于我们公司了解多少？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_25)
+- [你为什么愿意到我们公司来工作？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_26)
+- [你能为我们公司带来什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_27)
+- [你最擅长的技术点，最感兴趣的技术领域和技术点？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_28)
+- [说说你对行业、技术发展趋势的看法？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_29)
+- [理想中的工作环境是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_30)
+- [说说你的家庭？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_31)
+- [就你申请的这个职位，你认为你还欠缺什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_32)
+- [你做过的哪件事最令自己感到骄傲？说一件最能证明你能力的事情？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_33)
+- [对这项工作，你有哪些可预见的困难？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_34)
+- [如果被录用，你将怎样开展工作？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_35)
+- [希望与什么样的上级共事？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_36)
+- [你工作经验欠缺，如何能胜任这项工作？ ](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_37)
+- [如果你在这次面试中没有被录用，你怎么打算？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_38)
+- [除了本公司外，还应聘了哪些公司？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_39)
+- [你还要什么了解和要问的吗？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_40)
+- [实习过程中周围同事/同学有哪些值得学习的地方？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_41)
+- [是否可以实习，可以实习多久？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_42)
+- [实习过程中做了什么，有什么产出？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_43)
+- [公司实习最大的收获是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_44)
+- [评价下自己，评价下自己的技术水平，个人代码量如何？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_45)
+- [当前的 offer 状况；如果 BATH 都给了offer 该如何选？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_46)
+- [你对一份工作更看重哪些方面？平台，技术，氛围，城市，还是 money？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_47)
+- [假如你晚上要去送一个出国的同学去机场，可单位临时有事非你办不可，你怎么办？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_48)
+- [你看中公司的什么？或者公司的那些方面最吸引你？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_49)
+- [讲一件你印象最深的一件事情？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_50)
+- [介绍你做过的哪些项目，介绍一个你影响最深的项目？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_51)
+- [你做过的哪件事最令自己感到骄傲？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_52)
+- [都使用过哪些框架、平台？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_53)
+- [都使用过哪些自定义控件？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_54)
+- [项目中用了哪些开源库，如何避免因为引入开源库而导致的安全性和稳定性问题？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_55)
+- [有没有什么开源项目？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_56)
+- [研究比较深入的领域有哪些？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_57)
+- [对业内信息的关注渠道有哪些？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_58)
+- [业余都有哪些爱好？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_59)
+- [最近都读哪些书？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_60)
+- [你的梦想是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_61)
 
 ## 常见套路
 
 如果有遇到以下这些情况，你可以继续投简历：
 
-- [我们 xx 总不在，会叫 hr 联系你，你先回去等通知](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_62)
-- [面试叫你带上以往作品（工作成绩需要以往作品展示的除外，如：ui）然后面试官一直问你方案是怎么做的](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_63)
-- [遇到面试官敷衍随便问问题](https://github.com/jeanboydev/Android-Interview/blob/master/other/other.md#other_64)
+- [我们 xx 总不在，会叫 hr 联系你，你先回去等通知](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_62)
+- [面试叫你带上以往作品（工作成绩需要以往作品展示的除外，如：ui）然后面试官一直问你方案是怎么做的](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_63)
+- [遇到面试官敷衍随便问问题](https://github.com/xuyabin521/Android-Interview/blob/master/other/other.md#other_64)
 
 ## 成员
 
 - [singwhatiwanna](https://github.com/singwhatiwanna)
 - [Daimhim](https://github.com/Daimhim)
-- [Jeanboy](https://github.com/jeanboydev/Android-ReadTheFuckingSourceCode)
+- [Jeanboy](https://github.com/xuyabin521/Android-ReadTheFuckingSourceCode)
 - [ljingya](https://github.com/ljingya)
 - [沐小晨曦](https://github.com/Omooo)
 - [scofeildsun](https://github.com/scofeildsun)
 - [Mr.S](https://github.com/shishaoyan)
 - [shulianpang](https://github.com/shulianpang)
 
-同时欢迎大家加入我们一起整理收集，整理面试题不仅仅是对自己技术的检验，也可以帮助大家，为开源做一下贡献，期待您的加入。（申请加入请联系： [Jeanboy](https://github.com/jeanboydev/Android-ReadTheFuckingSourceCode)）
+同时欢迎大家加入我们一起整理收集，整理面试题不仅仅是对自己技术的检验，也可以帮助大家，为开源做一下贡献，期待您的加入。（申请加入请联系： [Jeanboy](https://github.com/xuyabin521/Android-ReadTheFuckingSourceCode)）
