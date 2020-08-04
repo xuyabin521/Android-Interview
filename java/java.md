@@ -250,13 +250,26 @@ Java 中，只有一种方式可以实现序列化，只需要实现 Serializabl
 ### <span id="java_30">30. 静态代理和动态代理的区别？有什么场景使用？</span>
 [https://www.jianshu.com/p/c17350962f29](https://www.jianshu.com/p/c17350962f29)
 ### <span id="java_31">31. 谈谈对 Java 状态机理解？</span>
+[https://zhuanlan.zhihu.com/p/97442825](https://zhuanlan.zhihu.com/p/97442825)
 
 ## 线程与并发
 
 ### <span id="java_thread_1">1. 线程和进程的区别？</span>
+	根本区别：进程是操作系统资源分配的基本单位，而线程是任务调度和执行的基本单位
+	
+	在开销方面：每个进程都有独立的代码和数据空间（程序上下文），程序之间的切换会有较大的开销；线程可以看做轻量级的进程，同一类线程共享代码和数据空间，每个线程都有自己独立的运行栈和程序计数器（PC），线程之间切换的开销小。
+	
+	所处环境：在操作系统中能同时运行多个进程（程序）；而在同一个进程（程序）中有多个线程同时执行（通过CPU调度，在每个时间片中只有一个线程执行）
+	
+	内存分配方面：系统在运行的时候会为每个进程分配不同的内存空间；而对线程而言，除了CPU外，系统不会为线程分配内存（线程所使用的资源来自其所属进程的资源），线程组之间只能共享资源。
+	
+	包含关系：没有线程的进程可以看做是单线程的，如果一个进程内有多个线程，则执行过程不是一条线的，而是多条线（线程）共同完成的；线程是进程的一部分，所以线程也被称为轻权进程或者轻量级进程。
 ### <span id="java_thread_2">2. 开启线程的三种方式</span>
+[https://www.cnblogs.com/lgjava/p/9997126.html](https://www.cnblogs.com/lgjava/p/9997126.html)
 ### <span id="java_thread_3">3. 如何正确的结束一个Thread?</span>
+[https://www.cnblogs.com/lukelook/p/10001298.html](https://www.cnblogs.com/lukelook/p/10001298.html)
 ### <span id="java_thread_4">4. Thread 与 Runnable 的区别？</span>
+[https://blog.csdn.net/dfshsdr/article/details/92432519](https://blog.csdn.net/dfshsdr/article/details/92432519)
 ### <span id="java_thread_5">5. run() 与 start() 方法的区别？</span>
 ### <span id="java_thread_6">6. sleep() 与 wait() 方法的区别？</span>
 ### <span id="java_thread_7">7. wait 与 notify 关键字的区别？</span>
