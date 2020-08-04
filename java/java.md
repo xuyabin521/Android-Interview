@@ -413,5 +413,6 @@ String a = "abc"
 ### <span id="java_other_32">32. 如何写出安全的 Java 代码？</span>
 ### <span id="java_other_33">33. 后台服务出现明显“变慢”，谈谈你的诊断思路？</span>
 ### <span id="java_other_34">34. 有人说“Lambda 能让 Java 程序慢 30 倍”，你怎么看？</span>
+[https://zhuanlan.zhihu.com/p/142271934](https://zhuanlan.zhihu.com/p/142271934)
 ### <span id="java_other_35">35. JVM 优化 Java 代码时都做了什么？</span>
 ### <span id="java_other_36">36. 谈谈 MySQL 支持的事务隔离级别，以及悲观锁和乐观锁的原理和应用场景？</span>
