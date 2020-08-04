@@ -163,7 +163,9 @@ Integer是类，int是基本数据类型。
 自动装箱就是Java自动将原始类型值转换成对应的对象，比如将int的变量转换成Integer对象，这个过程叫做装箱，反之将Integer对象转换成int类型值，这个过程叫做拆箱。
 
 ## <span id="java_12">12. 对 String 的了解？</span>
+[https://www.jianshu.com/p/80d36d75ac94](https://www.jianshu.com/p/80d36d75ac94)
 ## <span id="java_13">13. String 为什么要设计成不可变的？</span>
+[https://blog.csdn.net/renfufei/article/details/16808775](https://blog.csdn.net/renfufei/article/details/16808775)
 ## <span id="java_14">14. final、finally 和 finalize 的区别？</span>
 
 1. final: 修饰变量，方法，类； 修饰变量时表明这对象的值不可变，你不能为这个变量赋一个新的值，或者这样说：对基本类型而言，你不能改变其数值，对于引用，你不能将其指向一个新的引用（而引用自身是可以改变的）。 修饰方法时表明我们希望把这个方法锁定，以防止任何继承类修改它的含义，这样会确保在继承中，我们的 final 方法的行为不会改变，并且不会被覆盖。使用 final 方法的另一个考虑是效率问题：在 Java 早期的时候，遇到 final 方法，编译器会将此方法调用转为内嵌调用，如此一来以减小方法调用产生的开销。 修饰类的时候表明你不打算继承该类，而且也不允许别人这样做。
@@ -178,8 +180,15 @@ static 是 Java 里的非访问修饰符，它可以用来创建类方法和类�
 
 当修饰一个方法的时候，此方法就成了独立于对象的静态方法，静态方法不能使用类的非静态变量，因为静态方法和静态变量先于非静态的其他成员初始化，静态方法先出来，然后才是非静态的，所以明白这个顺序很重要。静态方法从参数列表得到数据，然后计算这些数据。
 
-## 16. 列举 Java 的集合以及集合之间的继承关系?
-## 17. List、Set、Map 的区别？
+## <span id="java_16">16. 列举 Java 的集合以及集合之间的继承关系?</span>
+[https://blog.csdn.net/github_37130188/article/details/95110737](https://blog.csdn.net/github_37130188/article/details/95110737)
+## <span id="java_17">17. List、Set、Map 的区别？</span>
+1. List是一个继承于Collection的接口，即List是集合中的一种。List是有序的队列，List中的每一个元素都有一个索引；第一个元素的索引值是0，往后的元素的索引值依次+1。和Set不同，List中允许有重复的元素。实现List接口的集合主要有：ArrayList、LinkedList、Vector、Stack。
+2. Set是一个继承于Collection的接口，Set是一种不包括重复元素的Collection。它维持它自己的内部排序，所以随机访问没有任何意义。与List一样，它同样运行null的存在但是仅有一个。由于Set接口的特殊性，所有传入Set集合中的元素都必须不同，关于API方面。Set的API和Collection完全一样。实现了Set接口的集合有：HashSet、TreeSet、LinkedHashSet、EnumSet。
+3. Map与List、Set接口不同，它是由一系列键值对组成的集合，提供了key到Value的映射。在Map中它保证了key与value之间的一一对应关系。也就是说一个key对应一个value，所以它不能存在相同的key值，当然value值可以相同。实现map的集合有：HashMap、HashTable、TreeMap、WeakHashMap。
+
+	[https://www.cnblogs.com/jxxblogs/p/11561629.html](https://www.cnblogs.com/jxxblogs/p/11561629.html)
+	
 ## <span id="java_18">18. ArrayList、LinkedList 的区别？</span>
 
 - ArrayList 实现了可变大小的数组。它允许 null。ArrayList 没有同步。增删慢，查询快。
@@ -189,9 +198,28 @@ static 是 Java 里的非访问修饰符，它可以用来创建类方法和类�
 List list = Collections.synchronizedList(new LinkedList(...)); 
 ```
 
-## 19. HashMap，HashTable，ConcurrentHashMap 实现原理以及区别？
-## 20. HashSet 与 HashMap 怎么判断集合元素重复？
-## 21. String、StringBuffer、StringBuilder 之间的区别？
+## <span id="java_19">19. HashMap，HashTable，ConcurrentHashMap 实现原理以及区别？</span>
+[https://www.cnblogs.com/one-apple-pie/p/10466755.html](https://www.cnblogs.com/one-apple-pie/p/10466755.html)
+## <span id="java_20">20. HashSet 与 HashMap 怎么判断集合元素重复？</span>
+HashMap中判断元素是否相同主要有两个方法，一个是判断key是否相同，一个是判断value是否相同
+
+HashSet不能添加重复的元素，当调用add（Object）方法时候，
+首先会调用Object的hashCode方法判hashCode是否已经存在，如不存在则直接插入元素；
+
+如果已存在则调用Object对象的equals方法判断是否返回true，如果为true则说明元素已经存在，如为false则插入元素。
+
+发现HashSet竟然是借助HashMap来实现的，利用HashMap中Key的唯一性，来保证HashSet中不出现重复值。
+
+从这段代码中可以看出，HashMap中的Key是根据对象的hashCode() 和 euqals()来判断是否唯一的。
+
+结论：为了保证HashSet中的对象不会出现重复值，在被存放元素的类中必须要重写hashCode()和equals()这两个方法。
+## <span id="java_21">21. String、StringBuffer、StringBuilder 之间的区别？</span>
+1. String的值是不可变的，这就导致每次对String的操作都会生成新的String对象，不仅效率低下，而且浪费大量优先的内存空间 
+2. StringBuffer是可变类，和线程安全的字符串操作类，任何对它指向的字符串的操作都不会产生新的对象。每个StringBuffer对象都有一定的缓冲区容量，当字符串大小没有超过容量时，不会分配新的容量，当字符串大小超过容量时，会自动增加容量 ，线程安全，多线程操作字符串。
+3. StringBuilder可变类，速度更快，线程不安全， 单线程操作字符串。
+
+	[https://blog.csdn.net/itchuxuezhe_yang/article/details/89966303](https://blog.csdn.net/itchuxuezhe_yang/article/details/89966303)
+	
 ## <span id="java_22">22. 什么是序列化？怎么实现？有哪些方式？</span>
 
 序列化是一种将对象转换为字节流的过程，目的是为了将该对象存储到内存中，等后面再次构建该对象时可以获取到该对象先前的状态及数据信息。
@@ -205,15 +233,23 @@ Java 中，只有一种方式可以实现序列化，只需要实现 Serializabl
 - 内存序列化优先选择 Parcelable。
 - 存储到设备优先选择 Serializable(这里推荐使用 json 方式加密保存在本地，比较简单)
 
-## 23. 对反射的了解？
-## 24. 对注解的了解？
-## 25. 对依赖注入的了解？
-## 26. 对泛型的了解？
-## 27. 泛型中 extends 和 super 的区别？
-## 28. 对 Java 的异常体系的了解？
-## 29. 对解析与分派的了解？
-## 30. 静态代理和动态代理的区别？有什么场景使用？
-## 31. 谈谈对 Java 状态机理解？
+## <span id="java_23">23. 对反射的了解？</span>
+[https://www.jianshu.com/p/61bd7c105082](https://www.jianshu.com/p/61bd7c105082)
+## <span id="java_24">24. 对注解的了解？</span>
+[https://blog.csdn.net/qq_29229567/article/details/93881883](https://blog.csdn.net/qq_29229567/article/details/93881883)
+## <span id="java_25">25. 对依赖注入的了解？</span>
+[https://www.cnblogs.com/alltime/p/6729295.html](https://www.cnblogs.com/alltime/p/6729295.html)
+## <span id="java_26">26. 对泛型的了解？</span>
+[https://zhuanlan.zhihu.com/p/79357469](https://zhuanlan.zhihu.com/p/79357469)
+## <span id="java_27">27. 泛型中 extends 和 super 的区别？</span>
+[https://www.jianshu.com/p/6ce3ee5fd93b](https://www.jianshu.com/p/6ce3ee5fd93b)
+## <span id="java_28">28. 对 Java 的异常体系的了解？</span>
+[https://www.jianshu.com/p/d227599404ee](https://www.jianshu.com/p/d227599404ee)
+## <span id="java_29">29. 对解析与分派的了解？</span>
+[https://www.jianshu.com/p/44790a602e11](https://www.jianshu.com/p/44790a602e11)
+## <span id="java_30">30. 静态代理和动态代理的区别？有什么场景使用？</span>
+[https://www.jianshu.com/p/c17350962f29](https://www.jianshu.com/p/c17350962f29)
+## <span id="java_31">31. 谈谈对 Java 状态机理解？</span>
 
 # 线程与并发
 
