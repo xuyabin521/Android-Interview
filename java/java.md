@@ -347,6 +347,7 @@ Java 内存模型规定了所有的变量都是存储在主内存中。每条线
 [Java 内存区域](https://www.jianshu.com/p/2f0742032ab3)
 
 ### <span id="java_jvm_2">2. 简述垃圾回收器的工作原理？</span>
+[https://www.jianshu.com/p/a238c56fd017](https://www.jianshu.com/p/a238c56fd017)
 ### <span id="java_jvm_3">3. 如何判断对象的生死？垃圾回收算法？新生代，老生代？</span>
 ### <span id="java_jvm_4">4. 哪些情况下的对象会被垃圾回收机制处理掉？</span>
 ### <span id="java_jvm_5">5. 垃圾回收机制与调用 System.gc() 的区别？</span>
