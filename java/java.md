@@ -271,17 +271,38 @@ Java 中，只有一种方式可以实现序列化，只需要实现 Serializabl
 ### <span id="java_thread_4">4. Thread 与 Runnable 的区别？</span>
 [https://blog.csdn.net/dfshsdr/article/details/92432519](https://blog.csdn.net/dfshsdr/article/details/92432519)
 ### <span id="java_thread_5">5. run() 与 start() 方法的区别？</span>
+	启动一个线程需要调用 Thread 对象的 start() 方法
+	调用线程的 start() 方法后，线程处于可运行状态，此时它可以由 JVM 调度并执行，这并不意味着线程就会立即运行
+	run() 方法是线程运行时由 JVM 回调的方法，无需手动写代码调用
+	直接调用线程的 run() 方法，相当于在调用线程里继续调用方法，并未启动一个新的线程
 ### <span id="java_thread_6">6. sleep() 与 wait() 方法的区别？</span>
+	1.相同点：
+	（1）这两个方法都能使线程进入阻塞状态
+	2.不同点：
+	（1）sleep()方法是Thread类中的静态方法；而wait()方法是Object类中的方法；
+	（2）sleep()方法可以在任何地方调用；而wait()方法只能在同步代码块或同步方法中使用(即使用synchronized关键字修饰的)；
+	（3）这两个方法都在同步代码块或同步方法中使用时，sleep()方法不会释放同步监视器；而wait()方法则会释放同步监视器；
 ### <span id="java_thread_7">7. wait 与 notify 关键字的区别？</span>
+[https://blog.csdn.net/github_37130188/article/details/97637072](https://blog.csdn.net/github_37130188/article/details/97637072)
 ### <span id="java_thread_8">8. synchronized 关键字的用法、作用及实现原理？</span>
+synchronized关键字是解决多个线程之间访问资源的同步性，可保证所修饰的代码块在任意时刻只有一个线程执行
+[https://blog.csdn.net/smarthunya/article/details/104359878](https://blog.csdn.net/smarthunya/article/details/104359878)
 ### <span id="java_thread_9">9. volatile 关键字的用法、作用及实现原理？</span>
+[https://www.cnblogs.com/sunleejon/p/12499518.html](https://www.cnblogs.com/sunleejon/p/12499518.html)
 ### <span id="java_thread_10">10. transient 关键字的用法、作用及实现原理？</span>
+	transient关键字的作用，在已实现序列化的类中，有的变量不需要保存在磁盘中，就要transient关键字修饰，如银行卡密码等，就这个作用------在已序列化的类中使变量不序列化
 ### <span id="java_thread_12">11. ReentrantLock、synchronized、volatile 之间的区别？</span>
+[https://blog.csdn.net/weixin_43946462/article/details/107425373](https://blog.csdn.net/weixin_43946462/article/details/107425373)
 ### <span id="java_thread_13">12. 什么是线程池，如何使用?</span>
+[https://www.cnblogs.com/baxianhua/p/9300952.html](https://www.cnblogs.com/baxianhua/p/9300952.html)
 ### <span id="java_thread_14">13. 多线程断点续传的实现原理？</span>
+[https://blog.csdn.net/cledwyn/article/details/88323577](https://blog.csdn.net/cledwyn/article/details/88323577)
 ### <span id="java_thread_15">14. 什么是深拷贝和浅拷贝？</span>
+[https://www.jianshu.com/p/94dbef2de298](https://www.jianshu.com/p/94dbef2de298)
 ### <span id="java_thread_15">15. Java 中对象的生命周期？</span>
+[https://www.jianshu.com/p/780f4c133c52](https://www.jianshu.com/p/780f4c133c52)
 ### <span id="java_thread_16">16. 对并发编程的了解？</span>
+[https://www.cnblogs.com/mrxiab/p/10676116.html](https://www.cnblogs.com/mrxiab/p/10676116.html)
 
 ## JVM
 
