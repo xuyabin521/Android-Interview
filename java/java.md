@@ -384,8 +384,15 @@ pf.isEnQueued();//返回是否从内存中已经删除
 ```
 
 ### <span id="java_jvm_7">7. 强引用设置为 null，会不会被回收？</span>
+会，GC执行时，就被回收掉，前提是没有被引用的对象
+[https://blog.csdn.net/github_37130188/article/details/89857033](https://blog.csdn.net/github_37130188/article/details/89857033)
 ### <span id="java_jvm_8">8. 简述 ClassLoader 类加载机制？</span>
+[https://blog.csdn.net/qq_26012495/article/details/106631498](https://blog.csdn.net/qq_26012495/article/details/106631498)
 ### <span id="java_jvm_9">9. 对双亲委派模型的了解？</span>
+	当某个类加载器需要加载某个.class文件时，它首先把这个任务委托给他的父类加载器，如果父的类加载器没有加载，
+	子类加载器才会尝试去加载。通俗的说就是：不论哪个class文件需要加载，首先给根加载器，若根加载器没找到，
+	则交给扩展类加载器，如果还没找到，才会给应用程序类加载器，再找不到就会报ClassNotFound异常。
+[https://blog.csdn.net/qq_26012495/article/details/106631498](https://blog.csdn.net/qq_26012495/article/details/106631498)
 ### <span id="java_jvm_10">10. String a = "a"+"b"+"c" 在内存中创建几个对象？</span>
 
 这个问题涉及到了字符串常量池和字符串拼接

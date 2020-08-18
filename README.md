@@ -65,16 +65,16 @@
 
 ###  JVM
 
-- [简述 JVM 内存模型和内存区域？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#jvm_1)
+- [简述 JVM 内存模型和内存区域？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_1)
 - 简述垃圾回收器的工作原理？
 - 如何判断对象的生死？垃圾回收算法？新生代，老生代？
 - 哪些情况下的对象会被垃圾回收机制处理掉？
 - 垃圾回收机制与调用 System.gc() 的区别？
-- [强引用、软引用、弱引用、虚引用之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_53)
+- [强引用、软引用、弱引用、虚引用之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_6)
 - 强引用设置为 null，会不会被回收？
 - 简述 ClassLoader 类加载机制？
 - 对双亲委派模型的了解？
-- [String a = "a"+"b"+"c" 在内存中创建几个对象？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_57)
+- [String a = "a"+"b"+"c" 在内存中创建几个对象？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_10)
 - 对 Dalvik、ART 虚拟机的了解？
 - 对动态加载（OSGI）的了解？
 - 常见编码方式有哪些？
