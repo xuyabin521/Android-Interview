@@ -3,9 +3,15 @@
 ## 基础
 
 ### <span id="android_base_1">1. 四大组件是什么？</span>
+“Android有四大组件:Activity、Service、Broadcast Receiver、Content Provider”
+[https://blog.csdn.net/qq_41801699/article/details/79471956](https://blog.csdn.net/qq_41801699/article/details/79471956)
 ### <span id="android_base_2">2. Activity 的生命周期？</span>
+“Activity 的生命周期: onCreate、onStart、onResume、onPause，onStop，onDestroy，onRestart”
+[https://www.jianshu.com/p/fb44584daee3](https://www.jianshu.com/p/fb44584daee3)
 ### <span id="android_base_3">3. Activity 之间的通信方式？</span>
+[https://www.jianshu.com/p/12438e23c6b8](https://www.jianshu.com/p/12438e23c6b8)
 ### <span id="android_base_4">4. Activity 各种情况下的生命周期？</span>
+[https://www.jianshu.com/p/e46d449467d5](https://www.jianshu.com/p/e46d449467d5)
 ### <span id="android_base_5">5. 横竖屏切换时 Activity 的生命周期</span>
 ### <span id="android_base_6">6. 前台切换到后台，然后再回到前台时 Activity 的生命周期</span>
 ### <span id="android_base_7">7. 弹出 Dialog 的时候按 Home 键时 Activity 的生命周期</span>
