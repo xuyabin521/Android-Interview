@@ -84,48 +84,48 @@
 
 ### 基础
 
-- 四大组件是什么？
-- Activity 的生命周期？
-- Activity 之间的通信方式？
-- Activity 各种情况下的生命周期？
-- 横竖屏切换时 Activity 的生命周期
-- 前台切换到后台，然后再回到前台时 Activity 的生命周期
-- 弹出 Dialog 的时候按 Home 键时 Activity 的生命周期
-- 两个 Activity 之间跳转时的生命周期
-- 下拉状态栏时 Activity 的生命周期
-- Activity 与 Fragment 之间生命周期比较？
-- Activity 的四种 LaunchMode（启动模式）的区别？
-- Activity 状态保存与恢复？
-- Fragment 各种情况下的生命周期？
+- [四大组件是什么？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_1)
+- [Activity 的生命周期？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_2)
+- [Activity 之间的通信方式？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_3)
+- [Activity 各种情况下的生命周期？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_4)
+- [横竖屏切换时 Activity 的生命周期](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_5)
+- [前台切换到后台，然后再回到前台时 Activity 的生命周期](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_6)
+- [弹出 Dialog 的时候按 Home 键时 Activity 的生命周期](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_7)
+- [两个 Activity 之间跳转时的生命周期](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_8)
+- [下拉状态栏时 Activity 的生命周期](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_9)
+- [Activity 与 Fragment 之间生命周期比较？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_10)
+- [Activity 的四种 LaunchMode（启动模式）的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_11)
+- [Activity 状态保存与恢复？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_12)
+- [Fragment 各种情况下的生命周期？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_13)
 -  [Activity 和 Fragment 之间怎么通信， Fragment 和 Fragment 怎么通信？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_14)
-- Service 的生命周期？
-- Service 的启动方式？
-- Service 与 IntentService 的区别?
+- [Service 的生命周期？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_15)
+- [Service 的启动方式？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_16)
+- [Service 与 IntentService 的区别?](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_17)
 - [Service 和 Activity 之间的通信方式？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_18)
-- 对 ContentProvider 的理解？
-- ContentProvider、ContentResolver、ContentObserver 之间的关系？
-- 对 BroadcastReceiver 的了解？
-- 广播的分类？使用方式和场景？
+- [对 ContentProvider 的理解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_19)
+- [ContentProvider、ContentResolver、ContentObserver 之间的关系？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_20)
+- [对 BroadcastReceiver 的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_21)
+- [广播的分类？使用方式和场景？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_22)
 - [动态广播和静态广播有什么区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_23)
-- AlertDialog、popupWindow、Activity 之间的区别？
-- Application 和 Activity 的 Context 之间的区别？
-- Android 属性动画特性？
-- 请列举 Android 中常见的布局（Layout）类型，并简述其用法，以及排版效率。【猎豹移动】
-    LinearLayout、RelativeLayout、FrameLayout 的特性对比及使用场景？
-- 对 SurfaceView 的了解？
-- Serializable 和 Parcelable 的区别？
-- Android 中数据存储方式有哪些？
-- 屏幕适配的处理技巧都有哪些?
-- Android 各个版本 API 的区别？
-- 动态权限适配方案，权限组的概念？
-- 为什么不能在子线程更新 UI？
-- ListView 图片加载错乱的原理和解决方案？
-- 对 RecycleView 的了解？
-- Recycleview 和 ListView 的区别？
-- RecycleView 实现原理？
-- Android Manifest 的作用与理解？
-- 多线程在 Android 中的使用？
-- 区别 Animation 和 Animator 的用法，概述实现原理？【猎豹移动】
+- [AlertDialog、popupWindow、Activity 之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_24)
+- [Application 和 Activity 的 Context 之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_25)
+- [Android 属性动画特性？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_26)
+- [请列举 Android 中常见的布局（Layout）类型，并简述其用法，以及排版效率。
+    LinearLayout、RelativeLayout、FrameLayout 的特性对比及使用场景？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_27)
+- [对 SurfaceView 的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_28)
+- [Serializable 和 Parcelable 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_29)
+- [Android 中数据存储方式有哪些？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_30)
+- [屏幕适配的处理技巧都有哪些?](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_31)
+- [Android 各个版本 API 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_32)
+- [动态权限适配方案，权限组的概念？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_33)
+- [为什么不能在子线程更新 UI？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_34)
+- [ListView 图片加载错乱的原理和解决方案？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_35)
+- [对 RecycleView 的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_36)
+- [Recycleview 和 ListView 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_37)
+- [RecycleView 实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_38)
+- [Android Manifest 的作用与理解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_39)
+- [多线程在 Android 中的使用？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_40)
+- [区别 Animation 和 Animator 的用法，概述实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_base_41)
 
 ### 高级
 
