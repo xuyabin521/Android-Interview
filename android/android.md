@@ -13,14 +13,38 @@
 ### <span id="android_base_4">4. Activity 各种情况下的生命周期？</span>
 [https://www.jianshu.com/p/e46d449467d5](https://www.jianshu.com/p/e46d449467d5)
 ### <span id="android_base_5">5. 横竖屏切换时 Activity 的生命周期</span>
+[https://www.jianshu.com/p/8c40829905ec](https://www.jianshu.com/p/8c40829905ec)
 ### <span id="android_base_6">6. 前台切换到后台，然后再回到前台时 Activity 的生命周期</span>
+A调用onCreate()方法 ---> onStart()方法 ---> onResume()方法。当A启动B时，A调用onPause()方法，然后调用新的Activity B，此时调用onCreate()方法 ---> onStart()方法 ---> onResume()方法将新Activity激活。之后A再调用onStop()方法。当A再次回到前台时，B调用onPause()方法，A调用onRestart()方法 ---> onStart()方法 ---> onResume()方法，最后调用B的onStop()方法 ---> onDestory()方法。
 ### <span id="android_base_7">7. 弹出 Dialog 的时候按 Home 键时 Activity 的生命周期</span>
+当我们的Activity上弹出Dialog对话框时，程序的生命周期依然是onCreate() ---> onStart() ---> onResume()，在弹出Dialog的时候并没有onPause()和onStop()方法。而在此时我们按下Home键，才会继续执行onPause()和onStop()方法。这说明对话框并没有使Activity进入后台，而是在点击了Home键后Activity才进入后台工作。
+
+原因就是，其实Dialog是Activity的一个组件，此时Activity并不是不可见，而是被Dialog组件覆盖了其他的组件，此时我们无法对其他组件进行操作而已。
 ### <span id="android_base_8">8. 两个 Activity 之间跳转时的生命周期</span>
+[https://www.cnblogs.com/yjing/p/5263109.html](https://www.cnblogs.com/yjing/p/5263109.html)
 ### <span id="android_base_9">9. 下拉状态栏时 Activity 的生命周期</span>
+下拉通知栏对Activity的生命周期没有影响。
 ### <span id="android_base_10">10. Activity 与 Fragment 之间生命周期比较？</span>
+[https://www.jianshu.com/p/5b132124cafc](https://www.jianshu.com/p/5b132124cafc)
 ### <span id="android_base_11">11. Activity 的四种 LaunchMode（启动模式）的区别？</span>
+1.standard
+standard模式是默认的启动模式，不用为<activity>配置android:launchMode属性即可，当然也可以指定值为standard。
+
+2.singleTop
+在上面的基础上为<activity>指定属性android:launchMode="singleTop"，系统就会按照singleTop启动模式处理跳转行为。singleTop启动模式，如果发现有对应的Activity实例正位于栈顶，则重复利用，不再生成新的实例。
+
+3.singleTask
+在上面的基础上修改FActivity的属性android:launchMode="singleTask"。singleTask模式，如果发现有对应的Activity实例，则使此Activity实例之上的其他Activity实例统统出栈，使此Activity实例成为栈顶对象，显示到幕前。
+
+4.singleInstance
+这种启动模式比较特殊，因为它会启用一个新的栈结构，将Acitvity放置于这个新的栈结构中，并保证不再有其他Activity实例进入。
 ### <span id="android_base_12">12. Activity 状态保存与恢复？</span>
+[https://www.jianshu.com/p/715333d87738](https://www.jianshu.com/p/715333d87738)  
+[https://www.jianshu.com/p/6968cca44763](https://www.jianshu.com/p/6968cca44763)
 ### <span id="android_base_13">13. Fragment 各种情况下的生命周期？</span>
+[https://blog.csdn.net/jokeeeeee/article/details/46004931](https://blog.csdn.net/jokeeeeee/article/details/46004931)  
+[https://blog.csdn.net/ya1139569539/article/details/78192112](https://blog.csdn.net/ya1139569539/article/details/78192112)  
+[https://blog.csdn.net/lmj623565791/article/details/37970961](https://blog.csdn.net/lmj623565791/article/details/37970961)
 ### <span id="android_base_14">14. Activity 和 Fragment 之间怎么通信， Fragment 和 Fragment 怎么通信？</span>
 
 	Activity 传值给 Fragment：通过 Bundle 对象来传递，Activity 中构造 bundle 数据包，调用 Fragment 对象的 `setArguments(Bundle b)` 方法，Fragment 中使用 `getArguments()` 方法获取 Activity 传递过来的数据包取值。
@@ -30,17 +54,46 @@
 	Fragment 传值给 Fragment：一个 Fragment 通过 Activity 获取到另外一个 Fragment 直接调用方法传值。
 
 ### <span id="android_base_15">15. Service 的生命周期？</span>
+[https://www.jianshu.com/p/cc25fbb5c0b3](https://www.jianshu.com/p/cc25fbb5c0b3)
 ### <span id="android_base_16">16. Service 的启动方式？</span>
+Service 的启动方式有两种，一种是startService(),一种是bindService().这两种方式有有什么区别.
+
+startService()，启动完之后该service就在后台运行，其生命周期跟启动它的Context没有任何关系。也不能跟Context通讯。
+bindService()启动之后生命周期跟启动它的Context有关，比如Activity、fragment、service等。在Context中解绑之后，如果改Service没有任何绑定后该Service也就结束。
+
 ### <span id="android_base_17">17. Service 与 IntentService 的区别?</span>
+Service简介  
+- 四大组件之一，没有用户界面，运行在后台。通常用于执行一些后台任务。例如，音乐播放等；
+- 继承于ContextWrapper，ContextWrapper继承于Context；
+- Service不是单独的进程，也不是线程，它和线程没有任何关系。它运行在主线程中，因此不能直接执行
+耗时任务。否则可能会导致ANR。如果需要执行耗时任务则需要创建独立的线程来执行；
+
+IntentService简介：  
+- IntentService 是 Service 的子类，因此具有和 Service 一样的生命周期，同时也提供了在后台
+线程中处理异步任务的机制。这个后台线程就是HandlerThread(后面做详解)；
+- 启动 IntentService 的方式和启动 Service 是一样的。不同的是 Service
+ 执行完后需要手动停止，而 IntentService 则不需要。任务执行完毕会自动停止(原理在后面做详解)；
+- 可以启动 IntentService 多次，如果此时IntentService正在运行，则这个新的Intent将会进入队
+列,排队等候执行。如果此时IntentService没有在运行，则会启动一个新的IntentService。这是一个
+单线程操作，前面的任务处理完了，后面的任务才能被处理（原理在后面详解）；
+
+[https://www.jianshu.com/p/ea8bc4aaf057](https://www.jianshu.com/p/ea8bc4aaf057)
 ### <span id="android_base_18">18. Service 和 Activity 之间的通信方式？</span>
 
 - 通过 Binder 对象
 - 通过 Broadcast（广播）的形式
 
 ### <span id="android_base_19">19. 对 ContentProvider 的理解？</span>
+[https://www.jianshu.com/p/92649b08ab4e](https://www.jianshu.com/p/92649b08ab4e)
 ### <span id="android_base_20">20. ContentProvider、ContentResolver、ContentObserver 之间的关系？</span>
+ContentProvider——内容提供者， 在android中的作用是对外共享数据，也就是说你可以通过ContentProvider把应用中的数据共享给其他应用访问，其他应用可以通过ContentProvider 对你应用中的数据进行添删改查。   
+ContentResolver——内容解析者， 其作用是按照一定规则访问内容提供者的数据（其实就是调用内容提供者自定义的接口来操作它的数据）。   
+ContentObserver——内容观察者，目的是观察(捕捉)特定Uri引起的数据库的变化，继而做一些相应的处理，它类似于数据库技术中的触发器(Trigger)，当ContentObserver所观察的Uri发生变化时，便会触发它。
+
 ### <span id="android_base_21">21. 对 BroadcastReceiver 的了解？</span>
+[https://www.jianshu.com/p/989e7c2f9293](https://www.jianshu.com/p/989e7c2f9293)
 ### <span id="android_base_22">22. 广播的分类？使用方式和场景？</span>
+[https://www.jianshu.com/p/02c9ddcd9a47](https://www.jianshu.com/p/02c9ddcd9a47)
 ### <span id="android_base_23">23. 动态广播和静态广播有什么区别？</span>
 
 - 动态的比静态的安全
