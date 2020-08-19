@@ -291,13 +291,13 @@ synchronized关键字是解决多个线程之间访问资源的同步性，可�
 [https://www.cnblogs.com/sunleejon/p/12499518.html](https://www.cnblogs.com/sunleejon/p/12499518.html)
 ### <span id="java_thread_10">10. transient 关键字的用法、作用及实现原理？</span>
 	transient关键字的作用，在已实现序列化的类中，有的变量不需要保存在磁盘中，就要transient关键字修饰，如银行卡密码等，就这个作用------在已序列化的类中使变量不序列化
-### <span id="java_thread_12">11. ReentrantLock、synchronized、volatile 之间的区别？</span>
+### <span id="java_thread_11">11. ReentrantLock、synchronized、volatile 之间的区别？</span>
 [https://blog.csdn.net/weixin_43946462/article/details/107425373](https://blog.csdn.net/weixin_43946462/article/details/107425373)
-### <span id="java_thread_13">12. 什么是线程池，如何使用?</span>
+### <span id="java_thread_12">12. 什么是线程池，如何使用?</span>
 [https://www.cnblogs.com/baxianhua/p/9300952.html](https://www.cnblogs.com/baxianhua/p/9300952.html)
-### <span id="java_thread_14">13. 多线程断点续传的实现原理？</span>
+### <span id="java_thread_13">13. 多线程断点续传的实现原理？</span>
 [https://blog.csdn.net/cledwyn/article/details/88323577](https://blog.csdn.net/cledwyn/article/details/88323577)
-### <span id="java_thread_15">14. 什么是深拷贝和浅拷贝？</span>
+### <span id="java_thread_14">14. 什么是深拷贝和浅拷贝？</span>
 [https://www.jianshu.com/p/94dbef2de298](https://www.jianshu.com/p/94dbef2de298)
 ### <span id="java_thread_15">15. Java 中对象的生命周期？</span>
 [https://www.jianshu.com/p/780f4c133c52](https://www.jianshu.com/p/780f4c133c52)

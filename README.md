@@ -46,39 +46,39 @@
 
 ### 线程与并发
 
-- 线程和进程的区别？
-- 开启线程的三种方式
-- 如何正确的结束一个Thread?
-- Thread 与 Runnable 的区别？
-- run() 与 start() 方法的区别？
-- sleep() 与 wait() 方法的区别？
-- wait 与 notify 关键字的区别？
-- synchronized 关键字的用法、作用及实现原理？
-- volatile 关键字的用法、作用及实现原理？
-- transient 关键字的用法、作用及实现原理？
-- ReentrantLock、synchronized、volatile 之间的区别？
-- 什么是线程池，如何使用?
-- 多线程断点续传的实现原理？
-- 什么是深拷贝和浅拷贝？
-- Java 中对象的生命周期？
-- 对并发编程的了解？
+- [线程和进程的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_1)
+- [开启线程的三种方式](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_2)
+- [如何正确的结束一个Thread?](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_3)
+- [Thread 与 Runnable 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_4)
+- [run() 与 start() 方法的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_5)
+- [sleep() 与 wait() 方法的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_6)
+- [wait 与 notify 关键字的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_7)
+- [synchronized 关键字的用法、作用及实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_8)
+- [volatile 关键字的用法、作用及实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_9)
+- [transient 关键字的用法、作用及实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_10)
+- [ReentrantLock、synchronized、volatile 之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_11)
+- [什么是线程池，如何使用?](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_12)
+- [多线程断点续传的实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_13)
+- [什么是深拷贝和浅拷贝？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_14)
+- [Java 中对象的生命周期？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_15)
+- [对并发编程的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_thread_16)
 
 ###  JVM
 
 - [简述 JVM 内存模型和内存区域？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_1)
-- 简述垃圾回收器的工作原理？
-- 如何判断对象的生死？垃圾回收算法？新生代，老生代？
-- 哪些情况下的对象会被垃圾回收机制处理掉？
-- 垃圾回收机制与调用 System.gc() 的区别？
+- [简述垃圾回收器的工作原理？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_2)
+- [如何判断对象的生死？垃圾回收算法？新生代，老生代？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_3)
+- [哪些情况下的对象会被垃圾回收机制处理掉？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_4)
+- [垃圾回收机制与调用 System.gc() 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_5)
 - [强引用、软引用、弱引用、虚引用之间的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_6)
-- 强引用设置为 null，会不会被回收？
-- 简述 ClassLoader 类加载机制？
-- 对双亲委派模型的了解？
+- [强引用设置为 null，会不会被回收？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_7)
+- [简述 ClassLoader 类加载机制？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_8)
+- [对双亲委派模型的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_9)
 - [String a = "a"+"b"+"c" 在内存中创建几个对象？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_10)
-- 对 Dalvik、ART 虚拟机的了解？
-- 对动态加载（OSGI）的了解？
-- 常见编码方式有哪些？
-- utf-8 编码中的中文占几个字节？int 型占几个字节？
+- [对 Dalvik、ART 虚拟机的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_11)
+- [对动态加载（OSGI）的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_12)
+- [常见编码方式有哪些？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_13)
+- [utf-8 编码中的中文占几个字节？int 型占几个字节？](https://github.com/xuyabin521/Android-Interview/blob/master/java/java.md#java_jvm_14)
 
 ## Android
 
@@ -130,45 +130,45 @@
 ### 高级
 
 - [画出 Android 的大体架构图](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_1)
-- 低版本 SDK 如何使用高版本 API？
-- AsyncTask 如何使用?
-- AsyncTask 机制、原理及不足？
-- 如果在 onStop() 的时候做了网络请求，onResume() 的时候怎么恢复？
-- Handler 机制和底层实现？
-- Handler、Thread、HandlerThread 区别？
-   Thread、Looper、MessageQueue、Handler、Message，每个类的功能是什么，这些类之间是什么关系？【猎豹移动】
-- ThreadLocal 原理、实现及如何保证 Local 属性？
-- 自定义 View 的流程？如何机型适配？
-- 自定义 View 的时怎么获取 View 的大小？
-- View 的绘制流程？
-- View 的事件传递分发机制？
-- requestLayout()，onLayout()，onDraw()，drawChild() 区别与联系？
-- invalidate() 和 postInvalidate() 的区别？
-- 如何计算一个 View 的嵌套层级？
-- Android 动画框架及实现原理？
-- 进程和 Application 的生命周期的关系？
-- SpareArray 的实现原理？
-- SharedPreferences 的实现眼里？是否进程同步？如何做到同步？
-- ContentProvider 是如何实现数据共享的？
-- ContentProvider 的权限管理？
--. Android 系统为什么会设计 ContentProvider？
-- Android 线程有没有上限？
-- 怎么去除重复代码？
-- Android 中开启摄像头的主要流程？
-- 对 Bitmap 对象的了解？
-- 图片加载原理？
-- 图片压缩原理？
-- 图片框架实现原理？LRUCache 原理？
-- EventBus 实现原理？
-- ButterKnife 实现原理？
-- Volley 实现原理？
-- okhttp 实现原理？
-- 服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？
-- SQLite 数据库升级，数据迁移问题？
-- 数据库框架对比和源码分析？
-- CAS介绍，OAuth 授权机制？
-- 谈谈你对安卓签名的理解
-- App 是如何沙箱化，为什么要这么做？
+- [低版本 SDK 如何使用高版本 API？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_2)
+- [AsyncTask 如何使用?](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_3)
+- [AsyncTask 机制、原理及不足？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_4)
+- [如果在 onStop() 的时候做了网络请求，onResume() 的时候怎么恢复？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_5)
+- [Handler 机制和底层实现？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_6)
+- [Handler、Thread、HandlerThread 区别？
+   Thread、Looper、MessageQueue、Handler、Message，每个类的功能是什么，这些类之间是什么关系？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_7)
+- [ThreadLocal 原理、实现及如何保证 Local 属性？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_8)
+- [自定义 View 的流程？如何机型适配？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_9)
+- [自定义 View 的时怎么获取 View 的大小？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_10)
+- [View 的绘制流程？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_11)
+- [View 的事件传递分发机制？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_12)
+- [requestLayout()，onLayout()，onDraw()，drawChild() 区别与联系？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_13)
+- [invalidate() 和 postInvalidate() 的区别？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_14)
+- [如何计算一个 View 的嵌套层级？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_15)
+- [Android 动画框架及实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_16)
+- [进程和 Application 的生命周期的关系？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_17)
+- [SpareArray 的实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_18)
+- [SharedPreferences 的实现眼里？是否进程同步？如何做到同步？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_19)
+- [ContentProvider 是如何实现数据共享的？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_20)
+- [ContentProvider 的权限管理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_21)
+- [Android 系统为什么会设计 ContentProvider？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_22)
+- [Android 线程有没有上限？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_23)
+- [怎么去除重复代码？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_24)
+- [Android 中开启摄像头的主要流程？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_25)
+- [对 Bitmap 对象的了解？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_26)
+- [图片加载原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_27)
+- [图片压缩原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_28)
+- [图片框架实现原理？LRUCache 原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_29)
+- [EventBus 实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_30)
+- [ButterKnife 实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_31)
+- [Volley 实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_32)
+- [okhttp 实现原理？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_33)
+- [服务器只提供数据接收接口，在多线程或多进程条件下，如何保证数据的有序到达？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_34)
+- [SQLite 数据库升级，数据迁移问题？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_35)
+- [数据库框架对比和源码分析？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_36)
+- [CAS介绍，OAuth 授权机制？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_37)
+- [谈谈你对安卓签名的理解](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_38)
+- [App 是如何沙箱化，为什么要这么做？](https://github.com/xuyabin521/Android-Interview/blob/master/android/android.md#android_advance_39)
 
 ### 混合开发
 
@@ -241,17 +241,17 @@
 
 ## 网络技术
 
-- [描述一次网络请求的流程?](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process)
-- TCP 中 3 次握手和 4 次挥手的过程?
-- TCP 与 UDP 的区别及应用?
-- HTTP 协议
-- HTTP 1.0 与 2.0 的区别
-- HTTP 报文结构
-- HTTP 与 HTTPS 的区别以及如何实现安全性
-- HTTPS 原理
-- 谈谈你对 WebSocket 的理解
-- WebSocket 与 socket 的区别
-- 视频加密传输
+- [描述一次网络请求的流程?](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_1)
+- [TCP 中 3 次握手和 4 次挥手的过程?](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_2)
+- [TCP 与 UDP 的区别及应用?](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_3)
+- [HTTP 协议](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_4)
+- [HTTP 1.0 与 2.0 的区别](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_5)
+- [HTTP 报文结构](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_6)
+- [HTTP 与 HTTPS 的区别以及如何实现安全性](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_7)
+- [HTTPS 原理](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_8)
+- [谈谈你对 WebSocket 的理解](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_9)
+- [WebSocket 与 socket 的区别](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_10)
+- [视频加密传输](https://github.com/xuyabin521/Android-Interview/blob/master/network/network.md#quest_network_technological_process_11)
 
 ## 数据结构与算法
 
