@@ -31,10 +31,22 @@ TCP是有拥塞控制的，但是UDP没有
 ### <span id="quest_network_technological_process_5">5. HTTP 1.0 与 2.0 的区别
 [https://www.jianshu.com/p/be29d679cbff](https://www.jianshu.com/p/be29d679cbff)
 ### <span id="quest_network_technological_process_6">6. HTTP 报文结构
+一个HTTP请求报文由四个部分组成：请求行、请求头部、空行、请求数据。  
+[https://www.jianshu.com/p/e29a327f9441](https://www.jianshu.com/p/e29a327f9441)
 ### <span id="quest_network_technological_process_7">7. HTTP 与 HTTPS 的区别以及如何实现安全性
+1.Url开头：HTTP 的 URL 以 HTTP:// 开头，而 HTTPS 的 URL 以 HTTPs:// 开头；  
+2.安全性：HTTP 是不安全的，而 HTTPS 是安全的。HTTP协议运行在TCP之上，所有传输的内容都是明文，HTTPS运行在SSL/TLS之上，SSL/TLS运行在TCP之上，所有传输的内容都经过加密的。  
+3.传输效率：传输效率上 HTTP 要高于 HTTPS ，因为 HTTPS 需要经过加密过程，过程相比于 HTTP 要繁琐一点，效率上低一些也很正常；  
+4.费用：HTTP 无需证书，而 HTTPS 必需要认证证书；相比于 HTTP 不需要证书来说，使用 HTTPS 需要证书，申请证书是要费用的，HTTPS 这笔费用是无法避免的  
+5.端口：HTTP和HTTPS使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。  
+6.防劫持性：HTTPS可以有效的防止运营商劫持，解决了防劫持的一个大问题。
+[https://blog.csdn.net/github_37130188/article/details/89463101](https://blog.csdn.net/github_37130188/article/details/89463101)
 ### <span id="quest_network_technological_process_8">8. HTTPS 原理
+[https://zhuanlan.zhihu.com/p/27395037](https://zhuanlan.zhihu.com/p/27395037)
 ### <span id="quest_network_technological_process_9">9. 谈谈你对 WebSocket 的理解
+[https://www.jianshu.com/p/c08cc2b21496](https://www.jianshu.com/p/c08cc2b21496)
 ### <span id="quest_network_technological_process_10">10. WebSocket 与 socket 的区别
+[https://www.jianshu.com/p/c08cc2b21496](https://www.jianshu.com/p/c08cc2b21496)
 ### <span id="quest_network_technological_process_11">11. 视频加密传输
 
 
