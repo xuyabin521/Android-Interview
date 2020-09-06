@@ -132,7 +132,9 @@ Parcelable（android 专用）：
 ### <span id="android_base_31">31. 屏幕适配的处理技巧都有哪些?</span>
 [https://www.jianshu.com/p/ec5a1a30694b](https://www.jianshu.com/p/ec5a1a30694b)
 ### <span id="android_base_32">32. Android 各个版本 API 的区别？</span>
+[https://www.jianshu.com/p/3426528cc077](https://www.jianshu.com/p/3426528cc077)
 ### <span id="android_base_33">33. 动态权限适配方案，权限组的概念？</span>
+[https://www.jianshu.com/p/dbe4d37731e6/](https://www.jianshu.com/p/dbe4d37731e6/)
 ### <span id="android_base_34">34. 为什么不能在子线程更新 UI？</span>
 ### <span id="android_base_35">35. ListView 图片加载错乱的原理和解决方案？</span>
 ### <span id="android_base_36">36. 对 RecycleView 的了解？</span>
