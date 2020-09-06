@@ -103,13 +103,34 @@ ContentObserver——内容观察者，目的是观察(捕捉)特定Uri引起的
 - 优先级动态广播的优先级比静态广播高
 
 ### <span id="android_base_24">24. AlertDialog、popupWindow、Activity 之间的区别？</span>
+AlertDialog 与 PopupWindow 之间最本质的差异在于：
+
+AlertDialog 是非阻塞式对话框；而PopupWindow 是阻塞式对话框。AlertDialog 弹出时，后台还可以做事情；PopupWindow 弹出时，程序会等待，在PopupWindow 退出前，程序一直等待，只有当我们调用了 dismiss() 方法的后，PopupWindow 退出，程序才会向下执行。我们在写程序的过程中可以根据自己的需要选择使用 Popupwindow 或者是 Dialog.   
+两者最根本的区别在于有没有新建一个 window，PopupWindow 没有新建，而是通过 WMS 将 View 加到 DecorView；Dialog 是新建了一个 window (PhoneWindow)，相当于走了一遍 Activity 中创建 window 的流程。
+
 ### <span id="android_base_25">25. Application 和 Activity 的 Context 之间的区别？</span>
+[https://www.jianshu.com/p/48772161b407](https://www.jianshu.com/p/48772161b407)
 ### <span id="android_base_26">26. Android 属性动画特性？</span>
+[https://www.jianshu.com/p/e7c8f0af3c6f](https://www.jianshu.com/p/e7c8f0af3c6f)
 ### <span id="android_base_27">27. LinearLayout、RelativeLayout、FrameLayout 的特性对比及使用场景？</span>
+[https://www.cnblogs.com/wgwyanfs/p/7288937.html](https://www.cnblogs.com/wgwyanfs/p/7288937.html)
 ### <span id="android_base_28">28. 对 SurfaceView 的了解？</span>
+怎么理解SurfaceView呢？顾名思义就是Surface+View了，因此，这个东西有两重身份：首先，是一个View；其次还是一个带有Surface的View。首先聊聊View，View我们可以理解为视图了，android上的imageview，textview之类的，都可以理解为视图，这些视图可以直接在layout上规划。所以，SurfaceView，类似的，也可以直接在xml上规划。再来聊聊Surface，Surface可以理解为一块画布，应用可以在Surface上绘制自己的图像。对于视频而言，其本质，也是图像，只不过是在不断变化的图像，确切的说，是每秒变化30帧的图像（30fps）。
+总结起来，SurfaceView本身是一个视图，可以在layout中布局，在这个视图中有一个画布是Surface，我们可以将图片绘制在这个Surface上。   
+[https://www.jianshu.com/p/75135086fa2a](https://www.jianshu.com/p/75135086fa2a)
 ### <span id="android_base_29">29. Serializable 和 Parcelable 的区别？</span>
+Serializable（Java自带）：
+Serializable是序列化的意思，表示将一个对象转换成可存储或可传输的状态。序列化后的对象可以在网络上进行传输，也可以存储到本地。
+
+Parcelable（android 专用）：
+除了Serializable之外，使用Parcelable也可以实现相同的效果，
+不过不同于将对象进行序列化，Parcelable方式的实现原理是将一个完整的对象进行分解，
+而分解后的每一部分都是Intent所支持的数据类型，这样也就实现传递对象的功能了。
+[https://www.jianshu.com/p/a60b609ec7e7](https://www.jianshu.com/p/a60b609ec7e7)
 ### <span id="android_base_30">30. Android 中数据存储方式有哪些？</span>
+[https://www.jianshu.com/p/be711f87a18f](https://www.jianshu.com/p/be711f87a18f)
 ### <span id="android_base_31">31. 屏幕适配的处理技巧都有哪些?</span>
+[https://www.jianshu.com/p/ec5a1a30694b](https://www.jianshu.com/p/ec5a1a30694b)
 ### <span id="android_base_32">32. Android 各个版本 API 的区别？</span>
 ### <span id="android_base_33">33. 动态权限适配方案，权限组的概念？</span>
 ### <span id="android_base_34">34. 为什么不能在子线程更新 UI？</span>
